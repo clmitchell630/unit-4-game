@@ -21,10 +21,10 @@
 </head>
 
 <body>
-    <div>
+    <div class="container">
 
-        <header>
-            <div>
+        <header class="row">
+            <div class="col-md-4 titleBox">
 
                 <h1>
                     CrystalsCollector!
@@ -34,47 +34,76 @@
         </header>
 
         <!--instructions box-->
-        <div>
-            <p>
-                You will be given a random number at the start of the game.
-            </p>
-            <p>
-                there are four crystals below. By clicking on a crystal you will add a speciic amount of points to your
-                total score.
-            </p>
-            <p>
-                You win the game by matching your total score to the random number, you lose the game if your total
-                score
-                goes above the random number.
-            </p>
-            <p>
-                The value of each crystal is hidden from you until you click on it.
-            </p>
-            <p>
-                Each time the game starts, the game will change the values of each crystal.
-            </p>
+        <div class="row">
+            <div class="col-md-6 insBox">
+                <p>
+                    You will be given a random number at the start of the game.
+                </p>
+                <p>
+                    there are four crystals below. By clicking on a crystal you will add a speciic amount of points to
+                    your
+                    total score.
+                </p>
+                <p>
+                    You win the game by matching your total score to the random number, you lose the game if your total
+                    score
+                    goes above the random number.
+                </p>
+                <p>
+                    The value of each crystal is hidden from you until you click on it.
+                </p>
+                <p>
+                    Each time the game starts, the game will change the values of each crystal.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <!--random number box-->
+            <div id="randomNumber" class="col-md-3 rdnBox">
+            </div>
+
+            <!--win/loss box-->
+            <div class="col-md-1 wlBox">
+                <div id="wins" class="row"></div>
+                <div id="loss" class="row"></div>
+            </div>
         </div>
 
-        <!--random number box-->
-        <div id="randomNumber">
+        <!------rupees------>
+        <div class="row">
+
+            <div class="col-md-5 rupeeBox">
+                <div class="row">
+                    <div id="green" class="col-md-3"><img src="assets/images/GreenRupee.png" alt="zelda green rupee"
+                            class="gemStyle">
+                    </div>
+                    <div id="blue" class="col-md-3"><img src="assets/images/BlueRupee.png" alt="zelda blue rupee"
+                            class="gemStyle">
+                    </div>
+                    <div id="yellow" class="col-md-3"><img src="assets/images/YellowRupee.png" alt="zelda yellow rupee"
+                            class="gemStyle">
+                    </div>
+                    <div id="red" class="col-md-3"><img src="assets/images/RedRupee.png" alt="zelda red rupee"
+                            class="gemStyle">
+                    </div>
+                </div>
+            </div>
+
         </div>
-        
-        <!--win/loss box-->
-        <div>
-            <div id="wins"></div>
-            <div id="loss"></div>
+        <div class="row">
+            <div class="col-md-4 tagBox">
+                <h3>
+                    Your total score is:
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 scoreBox">
+                <!--score-->
+                <div id="score"></div>
+            </div>
         </div>
 
-        <!--_____jewels_____-->
-        <div id="jewels"></div>
-
-        <h3>
-            Your total score is:
-        </h3>
-
-        <!--score-->
-        <div id="score"></div>
-        
     </div>
 
 
