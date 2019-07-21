@@ -1,7 +1,15 @@
-body{
+body {
     background-image: url("../images/dark-honeycomb.png");
     color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
 }
+
+h1 {
+    font-size: 24px;
+    padding: 10px 0;
+}
+
 .titleBox {
     margin-top: 100px;
     border: 1px solid beige;
@@ -9,19 +17,26 @@ body{
 
 .insBox {
     border: 1px solid beige;
+    padding: 10px 5px;
 }
 
 .gemStyle {
-    width: 80px;
+    width: 100%;
 }
 
 .rdnBox {
     min-height: 100px;
     border: 1px solid beige;
+    font-size: 32px;
+    padding: 20px;
 }
 
 .wlBox {
     border: 1px solid beige;
+}
+
+.wlStyle {
+    padding: 5px;
 }
 
 .rupeeBox {
@@ -31,9 +46,17 @@ body{
 
 .tagBox {
     border: 1px solid beige;
+    font-size: 10px;
+}
+
+h3 {
+    font-size: 24px;
+    padding: 10px 5px;
 }
 
 .scoreBox {
     min-height: 100px;
     border: 1px solid beige;
+    font-size: 32px;
+    padding: 20px;
 }
