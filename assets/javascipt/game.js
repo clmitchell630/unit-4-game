@@ -20,6 +20,7 @@ var buttonNum = randomRange(1, 12);
 var rupees = {
     green: 0, blue: 0, yellow: 0, red: 0
 }
+console.log(rupees);
 
 for (var key in rupees) {
     rupees[key] = randomRange(1, 12);
@@ -50,7 +51,11 @@ function randomRange(y, x) {
 function rupeeValue(e) {
     //add rupee value to score
     //console.log(e);
-    //console.log("I'm the rupee color: " + $(this)[0].id);
+    console.log("I'm the rupee color: " + $(this)[0].id);
+    console.log(rupees);
     score = score + rupees[$(this)[0].id];
+    console.log("I'm equal to: " + score);
+    
+    $("#score").text(score);
 
 }
