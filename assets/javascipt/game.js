@@ -1,5 +1,5 @@
 
-//------initialization-------
+//-------initialization-------
 console.log(" (\\  (\\\n (^___^)\nc(_(\")(\")\n  Hello!");
 console.log("this is game.js");
 
@@ -14,31 +14,12 @@ var rupees = {
 init();
 
 
-//------game------
+//-------game-------
 
 //button is clicked then adds button value to #score
 $(".rupeeStyle").on("click", rupeeValue);
 
-/*  if #score < #randomNumber then continue playing.
-    if #score = #randomNumber then you win. 
-    if #score > #randomNumber then you lose "dun dun dunnnn". 
-    print result in #result
-    re-initialize
-*/
-if (score > matchNum) {
-    loss++;
-    $("#result").text("You lose!");
-    $("#loss").text(loss);
-    init();
-}
-else if (score === matchNum) {
-    wins++;
-    $("#result").text("You Win!");
-    $("#wins").text(wins);
-    init();
-}
-
-//-------functions------
+//-------functions-------
 function randomRange(y, x) {
     return Math.floor(Math.random() * (x - y) + y);
 }
@@ -47,12 +28,34 @@ function rupeeValue(e) {
     //add rupee value to score
     score = score + rupees[$(this)[0].id];
     $("#score").text(score);
+    winCondition();
 
     //console.log(e);
     console.log("I'm the rupee color: " + $(this)[0].id);
     console.log("My value is: " + rupees[$(this)[0].id]);
     console.log("The score is now: " + score);
 }
+
+/*  if #score < #randomNumber then continue playing.
+    if #score = #randomNumber then you win. 
+    if #score > #randomNumber then you lose "dun dun dunnnn". 
+    print result in #result
+    re-initialize
+*/
+function winCondition(){
+    if (score > matchNum) {
+        loss++;
+        $("#result").text("You lose!");
+        $("#loss").text(loss);
+        init();
+    }
+    else if (score === matchNum) {
+        wins++;
+        $("#result").text("You Win!");
+        $("#wins").text(wins);
+        init();
+    }
+    }
 
 function init() {
 
