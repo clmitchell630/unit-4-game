@@ -1,7 +1,7 @@
 
 //-------initialization-------
 console.log(" (\\  (\\\n (^___^)\nc(_(\")(\")\n  Hello!");
-console.log("this is game.js");
+console.log("This RupeeCollector!!");
 
 var wins = 0;
 var loss = 0;
@@ -21,19 +21,25 @@ $(".rupeeStyle").on("click", rupeeValue);
 
 //-------functions-------
 function randomRange(y, x) {
+
     return Math.floor(Math.random() * (x - y) + y);
+
 }
 
 function rupeeValue(e) {
+
     //add rupee value to score
     score = score + rupees[$(this)[0].id];
     $("#score").text(score);
     winCondition();
 
     //console.log(e);
-    console.log("I'm the rupee color: " + $(this)[0].id);
-    console.log("My value is: " + rupees[$(this)[0].id]);
-    console.log("The score is now: " + score);
+    //console.log("I'm the rupee color: " + $(this)[0].id);
+    //console.log("My value is: " + rupees[$(this)[0].id]);
+    //console.log("The score is now: " + score);
+    console.log(this);
+    console.log($(this));
+
 }
 
 /*  if #score < #randomNumber then continue playing.
@@ -42,7 +48,8 @@ function rupeeValue(e) {
     print result in #result
     re-initialize
 */
-function winCondition(){
+function winCondition() {
+
     if (score > matchNum) {
         loss++;
         $("#result").text("You lose!");
@@ -55,12 +62,14 @@ function winCondition(){
         $("#wins").text("wins: " + wins);
         init();
     }
-    }
+
+}
 
 function init() {
 
+    //reset score
     score = 0;
-   
+
     //pick random number between 19 and 120
     matchNum = randomRange(19, 120);
 
