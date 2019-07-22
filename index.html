@@ -19,7 +19,7 @@
     <!--jQuery link-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--JS link-->
-    <script type="text/javascript" src="./assets/javascipt/game.js"></script>
+    <script type="text/javascript" src="./assets/javascipt/game.js" defer></script>
 
 </head>
 
@@ -67,6 +67,7 @@
             <!--win/loss box-->
             <div class="col-md-1 wlBox">
                 <div class="wlStyle">
+                    <div id="result" class="row"></div>
                     <div id="wins" class="row">wins: 0</div>
                     <div id="loss" class="row">loss: 0</div>
                 </div>
@@ -78,16 +79,16 @@
 
             <div class="col-md-5 rupeeBox">
                 <div class="row">
-                    <div id="green" class="col-md-3"><img src="assets/images/GreenRupee.png" alt="zelda green rupee"
+                    <div id="green" class="col-md-3 buttonStyle"><img src="assets/images/GreenRupee.png" alt="zelda green rupee" 
                             class="gemStyle">
                     </div>
-                    <div id="blue" class="col-md-3"><img src="assets/images/BlueRupee.png" alt="zelda blue rupee"
+                    <div id="blue" class="col-md-3 buttonStyle"><img src="assets/images/BlueRupee.png" alt="zelda blue rupee"
                             class="gemStyle">
                     </div>
-                    <div id="yellow" class="col-md-3"><img src="assets/images/YellowRupee.png" alt="zelda yellow rupee"
+                    <div id="yellow" class="col-md-3 buttonStyle"><img src="assets/images/YellowRupee.png" alt="zelda yellow rupee"
                             class="gemStyle">
                     </div>
-                    <div id="red" class="col-md-3"><img src="assets/images/RedRupee.png" alt="zelda red rupee"
+                    <div id="red" class="col-md-3 buttonStyle"><img src="assets/images/RedRupee.png" alt="zelda red rupee"
                             class="gemStyle">
                     </div>
                 </div>

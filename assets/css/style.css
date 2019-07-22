@@ -5,6 +5,12 @@ body {
     font-size: 12px;
 }
 
+.buttonStyle {
+    background-image: url("../images/dark-honeycomb.png");
+    border: none;
+    
+}
+
 h1 {
     font-size: 24px;
     padding: 10px 0;
