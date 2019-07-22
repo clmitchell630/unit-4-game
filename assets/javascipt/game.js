@@ -46,13 +46,13 @@ function winCondition(){
     if (score > matchNum) {
         loss++;
         $("#result").text("You lose!");
-        $("#loss").text(loss);
+        $("#loss").text("loss: " + loss);
         init();
     }
     else if (score === matchNum) {
         wins++;
         $("#result").text("You Win!");
-        $("#wins").text(wins);
+        $("#wins").text("wins: " + wins);
         init();
     }
     }
