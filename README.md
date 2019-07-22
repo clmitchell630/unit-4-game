@@ -2,7 +2,7 @@
 
 A number game where you discover the random values of the rupees and add them up to match the given random number!
 
-##How to play:
+## How to play:
 
 *   You will be given a random number at the start of the game.
 
@@ -14,7 +14,7 @@ A number game where you discover the random values of the rupees and add them up
 
 *   Each time the game starts, the game will change the values of each rupee.
 
-##Pseudocode:
+## Pseudocode:
 
 *   Initialization
     -   Set variables
