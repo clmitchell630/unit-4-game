@@ -5,10 +5,9 @@ body {
     font-size: 12px;
 }
 
-.buttonStyle {
+.rupeeStyle {
     background-image: url("../images/dark-honeycomb.png");
     border: none;
-    
 }
 
 h1 {
